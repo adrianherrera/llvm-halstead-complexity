@@ -68,8 +68,6 @@ void HalsteadComplexity::print(raw_ostream &OS, const Module *) const {
       (NumDistinctOperators / 2) * (NumTotalOperands / NumDistinctOperands);
   float Effort = Difficulty * Volume;
 
-  OS << "Halstead complexity of `" << this->F->getName() << ":\n";
-
   OS << "  # distinct operators: " << NumDistinctOperators << '\n';
   OS << "  # distinct operands: " << NumDistinctOperands << '\n';
 
